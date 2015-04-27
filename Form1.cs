@@ -47,10 +47,10 @@ namespace WIndow_Switcher
 				                                     	
 				                                     	
 				                                     
-                string winCheck = theprocess.MainWindowTitle;
+                string winCheck = theprocess.MainWindowTitle;//Checks for if process contains window.
                 if (!String.IsNullOrEmpty(winCheck))
                 {
-                    listView1.Items.Add(item);
+                    listView1.Items.Add(item);//if it does it will add the items that contain a window
                 }
                 else
                 {
@@ -64,7 +64,7 @@ namespace WIndow_Switcher
 
         }
 
-        void FadeAway(double Speed, int WaitSpeed )
+        void FadeAway(double Speed, int WaitSpeed )// fade away
         {
             for (double x = 1; x > 0; x = x - Speed)
             {
